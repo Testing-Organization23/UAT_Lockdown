@@ -8,11 +8,6 @@ pipeline {
         K8S_MANIFEST = 'k8s/post.yaml'
     }
 
-    triggers {
-        // Manual trigger only
-        // No automatic polling or webhook triggers
-    }
-
     stages {
         stage('Checkout') {
             steps {
